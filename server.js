@@ -13,7 +13,15 @@ const app = express();
 
  
 // Middleware
-app.use(cors({ origin: 'http://localhost:5173', credentials: true })); 
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://stock-portfolio-tracker-9bw9-55y7612bv-adijoshi07.vercel.app'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+}));
 app.use(express.json());
 
 
