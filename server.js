@@ -16,7 +16,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://stock-portfolio-tracker-9bw9-55y7612bv-adijoshi07.vercel.app'
+    'https://stock-portfolio-tracker-9bw9.vercel.app/'
   ],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
